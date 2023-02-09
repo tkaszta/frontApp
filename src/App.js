@@ -13,6 +13,7 @@ const App = () => {
     fetch('/viragok', {
       baseURL: 'https://backapp.azurewebsites.net'
     })
+      .then(response => console.info(response))
       .then(response => response.json())
       .then(data => {
         setGroups(data);
