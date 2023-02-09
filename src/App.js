@@ -19,7 +19,7 @@ const App = () => {
         setLoading(false);
       })
       .catch((error) => {
-        console.error(error)
+        console.info(`err: ${error}`);
       })
       .finally(() => {
         console.log('Experiment completed');
