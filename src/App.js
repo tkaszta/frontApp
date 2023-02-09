@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
 const App = () => {
 
@@ -19,6 +19,9 @@ const App = () => {
       .catch((error) => {
         console.error(error)
       })
+      .finally(() => {
+        console.log('Experiment completed');
+      })
   }, []);
 
   if (loading) {
@@ -28,7 +31,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <div className="App-intro">
           <h2>Virag Lista</h2>
           {
