@@ -20,7 +20,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://backapp.azurewebsites.net/viragok",
+  "proxy": "https://backapp.azurewebsites.net",
   "browserslist": {
     "production": [
       ">0.2%",
