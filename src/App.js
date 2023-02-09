@@ -4,29 +4,52 @@ import './App.css';
 
 const App = () => {
 
-  const [groups, setGroups] = React.useState([]);
-  const [loading, setLoading] = React.useState(false);
+  // const [groups, setGroups] = React.useState([]);
+  // const [loading, setLoading] = React.useState(false);
 
-  React.useEffect(() => {
-    setLoading(true);
+  // React.useEffect(() => {
+  //   setLoading(true);
 
-    fetch('/viragok')
-      .then(response => response.json())
-      .then(data => {
-        setGroups(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-      .finally(() => {
-        console.log('Experiment completed');
-      })
-  }, []);
+  //   fetch('/viragok')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       setGroups(data);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error)
+  //     })
+  //     .finally(() => {
+  //       console.log('Experiment completed');
+  //     })
+  // }, []);
 
-  if (loading) {
-    return <p>Loading slow...</p>;
-  }
+  // if (loading) {
+  //   return <p>Loading slow...</p>;
+  // }
+
+  let groups = [
+    {
+        "id": 1,
+        "name": "cinia"
+    },
+    {
+        "id": 2,
+        "name": "kankalin"
+    },
+    {
+        "id": 3,
+        "name": "rozsa"
+    },
+    {
+        "id": 4,
+        "name": "muskatli"
+    },
+    {
+        "id": 5,
+        "name": "kankalin"
+    }
+]
 
   return (
     <div className="App">
