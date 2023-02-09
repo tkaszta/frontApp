@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p>Loading slowly...</p>;
   }
 
   return (
