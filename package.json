@@ -21,6 +21,7 @@
     "extends": "react-app"
   },
   "proxy": "https://backapp.azurewebsites.net",
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
