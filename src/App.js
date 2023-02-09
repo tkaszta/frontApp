@@ -16,6 +16,9 @@ const App = () => {
         setGroups(data);
         setLoading(false);
       })
+      .catch((error) => {
+        console.error(error)
+      })
   }, []);
 
   if (loading) {
