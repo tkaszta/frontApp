@@ -11,7 +11,7 @@ const App = () => {
   React.useEffect(() => {
     setLoading(true);
 
-    fetch('/viragok')
+    fetch('/api/viragok')
       .then(response => response.json())
       .then(data => {
         setGroups(data);
