@@ -5,9 +5,6 @@ import './App.css';
 
 const App = () => {
 
-  // const { isLoading, data, error } = useFetch("https://api.github.com/users/eunit99/repos");
-  // console.log(data, isLoading, error)
-
   const [groups, setGroups] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
 
@@ -15,7 +12,6 @@ const App = () => {
     setLoading(true);
 
     fetch('/viragok')
-      // .then(response => console.info(response, response.body))
       .then(response => response.json())
       .then(data => {
         setGroups(data);
