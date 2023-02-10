@@ -2,6 +2,7 @@
   "name": "hello",
   "version": "0.1.0",
   "proxy": "https://backapp.azurewebsites.net",
+  "homepage": "https://purple-river-0a8af8903.2.azurestaticapps.net", 
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -22,7 +23,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
