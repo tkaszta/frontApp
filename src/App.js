@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
+// import useFetch from "react-fetch-hook";
 // import logo from './logo.svg';
 
 const App = () => {
+
+  // const { isLoading, data, error } = useFetch("https://api.github.com/users/eunit99/repos");
+  // console.log(data, isLoading, error)
 
   const [groups, setGroups] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
@@ -10,10 +14,8 @@ const App = () => {
   React.useEffect(() => {
     setLoading(true);
 
-    fetch('/viragok', {
-      baseURL: 'https://backapp.azurewebsites.net'
-    })
-      .then(response => console.info(response))
+    fetch('/viragok')
+      // .then(response => console.info(response, response.body))
       .then(response => response.json())
       .then(data => {
         setGroups(data);

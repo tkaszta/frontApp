@@ -1,6 +1,7 @@
 {
   "name": "hello",
   "version": "0.1.0",
+  "proxy": "https://backapp.azurewebsites.net",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-fetch-hook": "^1.9.5",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
@@ -20,7 +22,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://backapp.azurewebsites.net",
   "homepage": ".",
   "browserslist": {
     "production": [
